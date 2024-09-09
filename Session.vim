@@ -31,12 +31,21 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
+<<<<<<< HEAD
 let s:l = 16 - ((15 * winheight(0) + 17) / 34)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
 keepjumps 16
 normal! 0
+=======
+let s:l = 3 - ((2 * winheight(0) + 15) / 31)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 3
+normal! 016|
+>>>>>>> 7f6651f32557db557ffcb476dce214eee7091641
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf

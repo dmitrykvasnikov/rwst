@@ -1,5 +1,6 @@
 module StateT where
 
+import           Data.List
 import           Result
 
 data StateT s m a = StateT {runStateT :: s -> m (a, s)}
